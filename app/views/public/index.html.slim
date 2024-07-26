@@ -1,2 +1,35 @@
-div class='bg-red-500'
-  | teste
+/ Home hero
+section id="home-hero" class="flex flex-col items-center bg-green-500"
+  div class="pt-10 lg:pt-48 flex justify-center flex-col"
+    div class="max-w-sm lg:max-w-6xl text-white text-center lg:text-start flex flex-col lg:flex-row items-center lg:items-start justify-start lg:justify-center w-full"
+      h1#este-e-um-jeito-de-colocar-ids.este-e-um-jeito-de-colocar-classes class="text-[40px] lg:text-5xl leading-[46px] lg:leading-[55px] font-light max-w-[550px]"
+        | Money
+	  div class='w-[200px] lg:w-full'
+      p pesquise o que estes 'w' acima faz. 
+      p pesquise o que o lg acima faz
+
+    = link_to 'https://www.orkut.com/', target: "_blank" do
+      span class='text-blueLigth underline'
+        | o link_to é usado para redirecionar para outros lugares
+    span
+      | <br><br> Este é um jeito de escrever código html normal dentro do slim html, <span class='font-extrabold'>uma boa alteranativa para font bold mesclada.</span><br><br>
+
+/ Segunda seção
+section id="secao-2" class="px-[4%] lg:mx-auto pt-64 lg:pt-0 flex flex-col items-center bg-[#F5F9FB] text-blue-700"
+  div class="flex gap-[12px] md:gap-[30px] md:flex md:justify-center max-w-7xl  md:w-full"
+
+	= image_tag 'pet.jpg', class:""
+  p class='font-extrabold italic text-xl leading-7 text-blueDark pt-4'
+    | Assim você chama imagens no rails
+
+  div.classe-css-pura-avoid 
+    p classe css pura, tente evitar, foque em usar as classes do tailwind.
+    div class='flex flex-col items-center'
+      p use bastante a documentação do tailwind:
+      = link_to 'https://tailwindcss.com/', 'https://tailwindcss.com/'
+
+
+css:
+  .classe-css-pura-avoid {
+    background-color: white;
+  }
